@@ -27,7 +27,7 @@
           *ngFor = "let logItem of log"
           [ngStyle] = "{
               backgroundColor: logItem > 4 ? 'blue' : 'transparent' }"
-          [ngClass] = "{ yellow : logItem > 4}">{{ logItem }}</div>
+          [ngClass] = "{ 'text-warning font-weight-bold' : logItem > 4}">{{ logItem }}</div>
       </div>
 
   </div>

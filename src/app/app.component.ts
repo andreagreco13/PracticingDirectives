@@ -4,13 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  styles: [`
-    .yellow {
-      color: yellow;
-      font-weight: 500;
-    }
-  `]
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   showPassword = false;
