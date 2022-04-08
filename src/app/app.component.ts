@@ -11,7 +11,8 @@ export class AppComponent {
   log = [];
   showDetails() {
     this.showPassword = !this.showPassword;
-    this.log.push(this.log.length + 1);
+    // this.log.push(this.log.length + 1);
+    this.log.push((new Date()).toLocaleString('it-IT'));
   }
 
 }

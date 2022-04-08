@@ -24,10 +24,10 @@
       <div class="col-md-6 text-end">
         <div
           class="pe-1"
-          *ngFor = "let logItem of log"
+          *ngFor = "let logItem of log; let i = index"
           [ngStyle] = "{
-              backgroundColor: logItem > 4 ? 'blue' : 'transparent' }"
-          [ngClass] = "{ 'text-warning font-weight-bold' : logItem > 4}">{{ logItem }}</div>
+              backgroundColor: i > 4 ? 'blue' : 'transparent' }"
+          [ngClass] = "{ 'text-warning font-weight-bold' : i > 4}">{{ i+1 }}) {{ logItem }}</div>
       </div>
 
   </div>
